@@ -1,17 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
 html{
-    background-image: url("image.jpg");
+    background: #fffdf6;
+    /*background: #383838;*/
     background-size: cover;
-    background-repeat: no-repeat;
+    color: #f6c453;
+    font-family: 'Ubuntu', sans-serif;
+
+
+
+
 }
 
 h1,a{
+
     margin-top:  70px;
     margin-left: 40px;
-    color: blanchedalmond;
+    color: #f0a04b;
+    /*color: blanchedalmond;*/
 }
+
 
 p{
     margin-left: 100px;
-    color: darkorange;
+    color: #183a1d;
+
+
 }
+
+
+img, h2{
+    width: 500px;
+    margin-left: 40px;
+    /*border-color: blue;
+    border-style: dashed;*/
+    border-radius: 10px;
+}
+
+.photo{
+    width: 100px;
+}
+
+.person{
+    width: 250px;
+    display: inline;
+}
+
 
