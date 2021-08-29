@@ -10,60 +10,120 @@
 <body>
 
 <header>
-    <nav>
-        <ul>
+    <nav class="menu">
+        <ul id="menu">
             <li>
-                <a href="https://github.com/beatriz5?tab=repositories"><i class="fa fa-github" style="font-size:25px"></i></a>
+                <a href="https://github.com/beatriz5?tab=repositories"><i class="fa fa-github"
+                                                                          style="font-size:25px"></i></a>
             </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contacts">Contact</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contacts">contact</a></li>
+            <li><a href="#">home</a></li>
         </ul>
     </nav>
-    <h1>Beatriz, Front-end developer</h1>
+    <div style="height: 50px"></div>
+    <h1 class="hero">Beatriz, </h1>
+    <h1>Front-end developer</h1>
+
 </header>
 
 <section id="about">
-    <h2>About me</h2>
-    <img src="images/person.jpg" alt="Person" class="person">
-    <p>Hello, I am Beatriz</p>
-    <p>I am Software Engineering Student</p>
-    <p><b>Skills: </b>HTML, CSS, JS</p>
+    <div class="grid">
+        <div class="card">
+
+            <p >Hello, I am Beatriz</p>
+            <p>I am Software Engineering Student</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. .</p>
+            <p><b>Skills: </b>HTML, CSS, JS</p>
+
+        </div>
+        <div class="card fill">
+
+
+            <img src="images/person.jpg" alt="person">
+
+        </div>
+
+
+    </div>
 
 </section>
 
 <section id="portfolio">
     <h2>Portfolio</h2>
-    <div>
-        <img src="images/project1.png" alt="Project 1">
+    <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</p>
+    <div class="portfolio-grid">
+        <div class="portfolio-card">
+
+            <img src="images/project1.png" alt="Project 1" class="photo">
+            <p>First project.</p>
+
+        </div>
+
+
+        <div class="portfolio-card">
+            <img src="images/project2.png" alt="Project 2" class="photo">
+            <p>Second project.</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="images/project2.png" alt="Project 2" class="photo">
+            <p>Second project.</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="images/project2.png" alt="Project 2" class="photo">
+            <p>Second project.</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="images/project2.png" alt="Project 2" class="photo">
+            <p>Second project.</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="images/project2.png" alt="Project 2" class="photo">
+            <p>Second project.</p>
+        </div>
+
     </div>
-
-    <p>First project.</p>
-
-    <img src="images/project2.png" alt="Project 2">
-    <p>Second project.</p>
 
 </section>
 
 <section id="contacts">
     <h1>Contacts</h1>
-    <p>Reach me at:</p>
 
-    <div>
-    <a href="https://github.com/beatriz5" target="_blank">
-        <img class="photo" src="images/github.svg" alt="github beatriz5">
-    </a>
-
-    <a href="https://github.com/beatriz5" target="_blank">
-        <img class="photo" src="images/linkedin.svg" alt="linkedin">
-    </a>
-
+    <div class="right">
+        <p>Reach me at:</p>
+        <div class="c">
+            <a href="https://github.com/beatriz5" target="_blank">
+                <img class="contact-photo" src="images/github.svg" alt="github beatriz5">
+            </a>
+        </div>
+        <div class="c"><p></p></div>
+        <div class="c">
+            <a href="https://github.com/beatriz5" target="_blank">
+                <img class="contact-photo" src="images/linkedin.svg" alt="linkedin">
+            </a>
+        </div>
     </div>
+
+    <div style="width: 7rem"><p></p></div>
+
 
 </section>
 
 <footer>
-    <p>Beatriz, 2021</p>
+    <p>Beatriz | 2021</p>
 </footer>
 
 </body>
