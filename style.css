@@ -6,10 +6,27 @@ html, body {
     /*background: #fefbe9;*/
     background: #ffffff; /*#fff9f2; /*#fff2e1;	;/*#383838;*/
     background-size: cover;
-
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    margin: 0;
+
+    color: #fbdd63;
+    font-size: xxx-large;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+h2 {
+    color: #2a1516;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding-left: 10vw;
+
+
 }
 
 
@@ -21,7 +38,8 @@ p {
 
 
 .photo {
-    width: 300px;
+    width: 450px;
+
 }
 
 .person {
@@ -29,48 +47,30 @@ p {
     display: inline;
 }
 
-.contact-photo {
-    width: 50px;
-}
 
-.c {
-    display: inline;
-
-}
-
-img {
-    width: 500px;
-}
 
 /*NAVBAR*/
 
 nav {
     background-color: #2a1516;
-
     text-align: right;
-
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
 }
 
-ul#menu li {
+ul#menu li, ul#menus li {
     display: inline;
     padding-inline: 2%;
-
 }
 
-ul#menus li {
-    display: inline;
-    padding-inline: 2%;
-
-}
 
 li a {
     /*color: #f0a04b;*/
     color: #fbdd63;
     text-decoration: none;
+
 }
 
 /*END NAV BAR*/
@@ -82,14 +82,6 @@ header {
 
 }
 
-h1 {
-    margin: 0;
-    padding-left: 10vw;
-    color: #fbdd63;
-    font-size: xxx-large;
-    font-family: 'Raleway', sans-serif;
-
-}
 
 .hero {
     margin-top: 30vh;
@@ -97,7 +89,6 @@ h1 {
 
 .right {
     justify-self: center;
-
     text-align: center;
 }
 
@@ -109,25 +100,28 @@ h1 {
     z-index: 1;
 }
 
-.grid {
+.grid,.portfolio-grid {
     padding: 10vh 10vw;
     margin: 0 auto;
     display: grid;
     grid-gap: 4rem;
     text-align: justify;
+
 }
 
 
 .card {
     min-height: 45vh;
     position: relative;
-    border-radius: 7px;
+
     text-align: justify;
+    border-radius: 25px;
 
 }
 
 .card p {
     text-align: justify;
+
 }
 
 .fill {
@@ -135,6 +129,12 @@ h1 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+
+}
+
+.person-photo{
+    height: 450px;
 }
 
 
@@ -164,33 +164,16 @@ footer p {
 
 }
 
-h2 {
-    color: #2a1516;
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding-left: 10vw;
-
-
+.contact-photo {
+    width: 50px;
 }
 
-
-.portfolio-grid {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 10vh;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 3rem;
-
-}
 
 .portfolio-card {
     background-color: #ffffff;
-    border-style: solid;
-    border-color: #fbdd63;
+
     color: #383838;
     padding: 1rem;
-    height: auto;
 
     text-align: center;
 }
@@ -201,24 +184,21 @@ h2 {
     text-align: justify;
 }
 
-
+/*CONTACTS*/
 #contacts {
-    background-color: #fbdd63;
-    margin: 0;
-    height: 30vh;
+    text-align: center;
+    padding-bottom: 3rem;
+
 }
 
 #contacts ul {
     margin: 0;
     padding: 0;
 }
+/*END*/
 
 
-
-
-
-
-
+/*RESPONSIVE*/
 /* Screen larger than 900px? 2 column */
 @media (min-width: 1000px) {
     .grid {
@@ -227,6 +207,7 @@ h2 {
 
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
+
     }
 
 }
