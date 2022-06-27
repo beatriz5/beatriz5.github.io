@@ -4,49 +4,36 @@
 
 html, body {
     /*background: #fefbe9;*/
-    background: #ffffff; /*#fff9f2; /*#fff2e1;	;/*#383838;*/
+    /*background: #ffffff; #fff9f2; /*#fff2e1;	;/*#383838;*/
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #2a1516;
 }
 
 h1 {
-    margin: 0;
-
+    text-align: center;
     color: #fbdd63;
     font-size: xxx-large;
     font-family: 'Raleway', sans-serif;
-
 }
 
 h2 {
-    color: #2a1516;
+    color: #fbdd63;
+    font-size: xxx-large;
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding-left: 10vw;
-
-
+    text-align: center;
+    background-color: #2a1516;
+    padding-top: 4vh;
+    margin-bottom: 0;
 }
-
 
 p {
     color: #0d1419; /*#183a1d;*/
     line-height: 1.75;
     text-align: center;
 }
-
-
-.photo {
-    width: 450px;
-
-}
-
-.person {
-    width: 250px;
-    display: inline;
-}
-
 
 
 /*NAVBAR*/
@@ -65,15 +52,57 @@ ul#menu li, ul#menus li {
     padding-inline: 2%;
 }
 
-
-li a {
+li a, b{
     /*color: #f0a04b;*/
     color: #fbdd63;
     text-decoration: none;
+}
+/*END NAV BAR*/
+
+
+/*about*/
+.persona {
+    width: 95%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
-/*END NAV BAR*/
+#about{
+    background-color: #2a1516;
+}
+
+
+#about p, li {
+    color: #ffffff;
+}
+
+/*end about*/
+
+
+
+.button {
+    background-color: #fbdd63; /* Green */
+    border: none;
+    color: #2a1516;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.photo {
+    width: 100%;
+    padding-top: 10%;
+
+}
 
 header {
     height: 100vh;
@@ -84,7 +113,9 @@ header {
 
 
 .hero {
-    margin-top: 30vh;
+    padding-top: 30vh;
+
+
 }
 
 .right {
@@ -93,7 +124,7 @@ header {
 }
 
 .person {
-    width: 300px;
+
     position: absolute;
     right: 0;
     bottom: 0;
@@ -107,6 +138,7 @@ header {
     grid-gap: 4rem;
     text-align: justify;
 
+
 }
 
 
@@ -116,6 +148,8 @@ header {
 
     text-align: justify;
     border-radius: 25px;
+
+
 
 }
 
@@ -144,7 +178,7 @@ footer {
 
     margin: 0;
     padding: 0;
-    height: 90px;
+    height: 100px;
     justify-items: center;
     align-items: center;
 
@@ -159,7 +193,7 @@ footer p {
 
     text-align: center;
     vertical-align: middle;
-    line-height: 90px;
+    line-height: 100px;
 
 
 }
@@ -170,14 +204,18 @@ footer p {
 
 
 .portfolio-card {
-    background-color: #ffffff;
 
-    color: #383838;
-    padding: 1rem;
+
+    padding: 3vh;
 
     text-align: center;
+    border-color: #fbdd63;
+    border-style: solid;
 }
 
+.portfolio-card p {
+    color: white;
+}
 .per {
     padding-left: 10vw;
     padding-right: 10vw;
@@ -188,6 +226,13 @@ footer p {
 #contacts {
     text-align: center;
     padding-bottom: 3rem;
+    background-color: #fbdd63;
+
+}
+
+#contacts h2{
+    color: #2a1516;
+    background-color: #fbdd63;
 
 }
 
@@ -210,6 +255,7 @@ footer p {
 
     }
 
+
 }
 
 @media (min-width: 1900px) {
@@ -221,4 +267,6 @@ footer p {
     .portfolio-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+
 }
