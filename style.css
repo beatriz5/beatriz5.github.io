@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 html, body {
-    /*background: #fefbe9;*/
-    /*background: #ffffff; #fff9f2; /*#fff2e1;	;/*#383838;*/
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
@@ -13,76 +11,136 @@ html, body {
 }
 
 h1 {
+    /*text-shadow: -1px 0 #986e14, 0 1px #986e14, 1px 0 #986e14, 0 -1px #986e14; */
     text-align: center;
     color: #fbdd63;
-    font-size: xxx-large;
+    font-size: 7vh;
     font-family: 'Raleway', sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
 }
 
 h2 {
+
+    margin: 0;
+    text-align: center;
     color: #fbdd63;
-    font-size: xxx-large;
+    font-size: 4rem;
     font-family: 'Raleway', sans-serif;
-    text-align: center;
-    background-color: #2a1516;
-    padding-top: 4vh;
-    margin-bottom: 0;
 }
 
-p {
-    color: #0d1419; /*#183a1d;*/
+#about h2 {
+
+    padding-top: 3%;
+}
+
+p{
+    color: #0d1419;
     line-height: 1.75;
-    text-align: center;
+    font-size: 1.25rem;
+
+}
+
+a, button{
+    font-size: 2vh;
+
 }
 
 
+
+
+/* -------------------------------------------------------------------------- */
 /*NAVBAR*/
 
 nav {
     background-color: #2a1516;
-    text-align: right;
+    text-align: center;
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 2;
+    justify-items: stretch;
+
 }
 
 ul#menu li, ul#menus li {
     display: inline;
     padding-inline: 2%;
+
 }
 
 li a, b{
-    /*color: #f0a04b;*/
     color: #fbdd63;
     text-decoration: none;
 }
-/*END NAV BAR*/
+/* -------------------------------------------------------------------------- */
 
 
-/*about*/
+/* HEADER */
+header {
+    height: 100vh;
+    background: url("images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.hero {
+    padding-top: 20vh;
+}
+/* -------------------------------------------------------------------------- */
+/* ABOUT */
 .persona {
-    width: 95%;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.gridd {
+
+    padding: 7% 7%;
+    display: grid;
+    grid-gap: 4rem;
+}
+
+.cardd {
+    border-color: #fbdd63;
+    border-style: solid;
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+
 
 }
 
-#about{
+.cardd p, ul {
+    color: white;
+}
+
+.cardd:nth-of-type(2) {
+  padding:0 ;
+    border-color: pink;
+    border-style: none;
     background-color: #2a1516;
 }
 
-
-#about p, li {
-    color: #ffffff;
+/* -------------------------------------------------------------------------- */
+/* PORTFOLIO */
+.grid {
+    padding: 7% 7%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 4rem;
+    text-align: justify;
 }
 
-/*end about*/
+.card {
+    padding: 3vh;
+    text-align: center;
+    border-color: #fbdd63;
+    border-style: solid;
+}
 
-
+.card p, ul {
+    color: white;
+}
 
 .button {
     background-color: #fbdd63; /* Green */
@@ -92,8 +150,8 @@ li a, b{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    /*font-size: 18px;*/
+    /*margin: 4px 2px;*/
     cursor: pointer;
 
 }
@@ -101,172 +159,52 @@ li a, b{
 .photo {
     width: 100%;
     padding-top: 10%;
-
 }
-
-header {
-    height: 100vh;
-    background: url("images/bg.jpg") no-repeat center center fixed;
-    background-size: cover;
-
-}
-
-
-.hero {
-    padding-top: 30vh;
-
-
-}
-
-.right {
-    justify-self: center;
+/* -------------------------------------------------------------------------- */
+/*CONTACTS*/
+#contacts {
     text-align: center;
+    padding-bottom: 3rem;
+    background-color: #fbdd63;
 }
 
-.person {
-
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+#contacts h2{
+    color: #2a1516;
+    background-color: #fbdd63;
+    padding-top: 3%;
 }
 
-.grid,.portfolio-grid {
-    padding: 10vh 10vw;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 4rem;
-    text-align: justify;
-
-
-}
-
-
-.card {
-    min-height: 45vh;
-    position: relative;
-
-    text-align: justify;
-    border-radius: 25px;
-
-
-
-}
-
-.card p {
-    text-align: justify;
-
-}
-
-.fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-
-}
-
-.person-photo{
-    height: 450px;
-}
-
-
-footer {
-    background-color: #2a1516;
-    color: #fbdd63;
-
-    margin: 0;
+#contacts ul {
     padding: 0;
-    height: 100px;
-    justify-items: center;
-    align-items: center;
-
-}
-
-footer p {
-    /*color: #f0a04b;*/
-    margin: 0;
-    color: #fbdd63;
-    text-decoration: none;
-
-
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-
-
 }
 
 .contact-photo {
     width: 50px;
 }
 
-
-.portfolio-card {
-
-
-    padding: 3vh;
-
-    text-align: center;
-    border-color: #fbdd63;
-    border-style: solid;
-}
-
-.portfolio-card p {
-    color: white;
-}
-.per {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    text-align: justify;
-}
-
-/*CONTACTS*/
-#contacts {
-    text-align: center;
-    padding-bottom: 3rem;
-    background-color: #fbdd63;
-
-}
-
-#contacts h2{
-    color: #2a1516;
-    background-color: #fbdd63;
-
-}
-
-#contacts ul {
+/* -------------------------------------------------------------------------- */
+/* FOOTER */
+footer p {
+    /*color: #f0a04b;*/
     margin: 0;
-    padding: 0;
+    color: #fbdd63;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
 }
-/*END*/
 
-
+/* -------------------------------------------------------------------------- */
 /*RESPONSIVE*/
 /* Screen larger than 900px? 2 column */
 @media (min-width: 1000px) {
-    .grid {
+    .grid, .gridd {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-
 }
 
 @media (min-width: 1900px) {
-    p {
-        font-size: larger;
-        font-weight: normal;
-    }
-
-    .portfolio-grid {
+    .grid, .gridd {
         grid-template-columns: repeat(3, 1fr);
     }
-
-
 }
