@@ -36,15 +36,9 @@ h2 {
     padding-top: 3%;
 }
 
-p{
-    color: #0d1419;
+p, a, button{
+    font-size: 1.75vh;
     line-height: 1.75;
-    font-size: 1.25rem;
-
-}
-
-a, button{
-    font-size: 2vh;
 
 }
 
@@ -146,7 +140,7 @@ header {
     background-color: #fbdd63; /* Green */
     border: none;
     color: #2a1516;
-    padding: 15px 32px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
