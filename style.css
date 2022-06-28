@@ -74,7 +74,7 @@ li a, b{
 /* HEADER */
 header {
     height: 100vh;
-    background: url("images/bg.jpg") no-repeat center center fixed;
+    background: url("images/bg.jpg") no-repeat center fixed;
     background-size: cover;
 }
 .hero {
@@ -97,9 +97,9 @@ header {
     border-color: #fbdd63;
     border-style: solid;
     text-align: left;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 1.75rem;
 
 
 }
