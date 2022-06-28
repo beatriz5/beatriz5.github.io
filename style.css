@@ -18,12 +18,9 @@ h1 {
     font-family: 'Raleway', sans-serif;
     padding-left: 10%;
     padding-right: 10%;
-
-
 }
 
 h2 {
-
     margin: 0;
     text-align: center;
     color: #fbdd63;
@@ -32,22 +29,16 @@ h2 {
 }
 
 #about h2 {
-
     padding-top: 3%;
 }
 
-p, a, button{
+p, a, button {
     font-size: 1.1rem;
     line-height: 1.75;
-
 }
-
-
-
 
 /* -------------------------------------------------------------------------- */
 /*NAVBAR*/
-
 nav {
     background-color: #2a1516;
     text-align: center;
@@ -55,31 +46,40 @@ nav {
     width: 100%;
     z-index: 2;
     justify-items: stretch;
+    margin-left: 0;
 
 }
 
 ul#menu li, ul#menus li {
     display: inline;
-    padding-inline: 2%;
-
+    padding-inline-end: 2%;
 }
 
-li a, b{
+li a, b {
     color: #fbdd63;
     text-decoration: none;
 }
+
+nav ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 /* -------------------------------------------------------------------------- */
-
-
 /* HEADER */
 header {
     height: 100vh;
-    background: url("images/bg.jpg") no-repeat center fixed;
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     background-size: cover;
 }
+
 .hero {
     padding-top: 20vh;
 }
+
 /* -------------------------------------------------------------------------- */
 /* ABOUT */
 .persona {
@@ -100,8 +100,6 @@ header {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
     padding-top: 1.75rem;
-
-
 }
 
 .cardd p, ul {
@@ -109,7 +107,7 @@ header {
 }
 
 .cardd:nth-of-type(2) {
-  padding:0 ;
+    padding: 0;
     border-color: pink;
     border-style: none;
     background-color: #2a1516;
@@ -154,6 +152,7 @@ header {
     width: 100%;
     padding-top: 10%;
 }
+
 /* -------------------------------------------------------------------------- */
 /*CONTACTS*/
 #contacts {
@@ -162,7 +161,7 @@ header {
     background-color: #fbdd63;
 }
 
-#contacts h2{
+#contacts h2 {
     color: #2a1516;
     background-color: #fbdd63;
     padding-top: 3%;
