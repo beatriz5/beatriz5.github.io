@@ -206,12 +206,18 @@ footer p {
 /* -------------------------------------------------------------------------- */
 /*RESPONSIVE*/
 /* Screen larger than 900px? 2 column */
+
+@media (max-width: 900px) {
+    .persona {
+        max-width: 100%;
+    }
+}
+
+
 @media (min-width: 900px) {
     .grid, .gridd {
         grid-template-columns: repeat(2, 1fr);
     }
-
-
 }
 
 /* Screen larger than 1500px? 3 column */
